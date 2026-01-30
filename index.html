@@ -3,15 +3,13 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
-
         <link
             rel="icon"
             type="image/png"
             sizes="32x32"
             href="./images/favicon-32x32.png"
         />
-        <link rel="stylesheet" href="./output.css" />
+        <link rel="stylesheet" href="./style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -20,28 +18,22 @@
         />
         <title>Frontend Mentor | QR code component</title>
     </head>
-    <body
-        class="flex flex-col justify-center items-center font-[Outfit] text-[15px] text-center h-screen bg-[#d5e1ef]"
-    >
-        <main class="w-[320px] h-124.75 p-4 rounded-[20px] bg-[#ffffff]">
+    <body>
+        <div class="card">
             <img
-                class="w-[288px] h-72 mb-6 rounded-[10px]"
+                class="card__image"
                 src="./images/image-qr-code.png"
                 alt="QR-code"
             />
-            <div class="flex flex-col justify-center gap-4 pl-4 pr-4">
-                <h1
-                    class="font-bold text-[22px] leading-[120%] tracking-[0px] first-letter:capitalize text-[#1f314f]"
-                >
-                    improve your front-end skills by building projects
+            <div class="card__contener">
+                <h1 class="card__headline">
+                    Improve your front-end skills by building projects
                 </h1>
-                <p
-                    class="leading-[140%] tracking-[0.2px] first-letter:capitalize text-[#68778d]"
-                >
-                    scan the QR code to visit Frontend Mentor and take your
+                <p class="card__text">
+                    Scan the QR code to visit Frontend Mentor and take your
                     coding skills to the next level
                 </p>
             </div>
-        </main>
+        </div>
     </body>
 </html>
